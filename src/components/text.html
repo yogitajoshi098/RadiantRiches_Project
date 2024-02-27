@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript tutorial</title>
+  </head>
+  <body>
+    <script>
+      
+
+function getCheese(){
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+          let cheese = '🧀';
+          resolve(cheese)
+        },1000)
+    })
+}
+
+
+function makeDough(cheese){
+return new Promise((resolve, reject)=>{
+setTimeout(()=>{
+    const dough = cheese + '🍩';
+    resolve(dough)
+},2000)
+})
+}
+
+function getPizza(dough){
+return new Promise((resolve, reject)=>{
+setTimeout(()=>{
+    const pizza =  dough+  '🍕';
+    resolve(pizza)
+},2000)
+})
+}
+
+
+async function OrderPizza(){
+const cheese = await getCheese();
+const dough = await makeDough(cheese);
+const pizza = await getPizza(dough);
+console.log("The pizza is ready......")
+}
+
+
+OrderPizza();
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.navbar_main {
+    height: 10vh;
+    background: black;
+     display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.navbar_div{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+
+@media (max-width: 767px) {
+    .navbar_div{
+      width: 90%;
+    }
+  }

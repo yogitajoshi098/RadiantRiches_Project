@@ -1,0 +1,35 @@
+.mid-box {
+    height: 116px;
+    border-radius: 12px;
+    background: #fff4ed;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 1rem;
+    gap: 4px;
+  }
+  .mid-box span{
+    font-family: Inter;
+    color: #4b5665;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 8px;
+  }
+  
+  .mid-box div{
+    font-family: Inter;
+    color: #1b88f4;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    
+  
+    
+  }
+  .mid-box div p{
+    background-color: white;
+  }
+  
+  
